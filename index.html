@@ -1,3 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>downLoad</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    
+    body {
+        background: #ff8031;
+    }
+    
+    .wrap_img {
+        display: flex;
+        justify-content: center;
+    }
+</style>
+
+<body>
+    <div class="wrap_img">
+        <img src="./img/back.png" alt="download" style="max-width:100%;" onclick="clickBtn()">
+    </div>
+</body>
+<script>
+    function clickBtn() {
+
+        var u = navigator.userAgent;
+        var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //Android
+        var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //iOS    
+        if (isAndroid) {
+            window.location.href = 'https://play.google.com/store/apps/details?id=cn.figo.zhongpin';
+        }
+        if (isiOS) {
+            window.location.href = 'https://apps.apple.com/us/app/wizzzy-mall/id1509428390';
+        }
+    }
+</script>
+
+</html>
 <!-- Facebook Pixel Code -->
 <script>
   !function(f,b,e,v,n,t,s)
@@ -19,7 +64,7 @@
 <script>
   window.fbAsyncInit = function() {
     FB.init({
-      appId      : '{your-app-id}',
+      appId      : '{312156556817431}',
       cookie     : true,
       xfbml      : true,
       version    : '{api-version}'
