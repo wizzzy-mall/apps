@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>downLoad</title>
+    <title>Wizzy Mall - DownLoad</title>
 </head>
 <style>
     * {
@@ -27,44 +27,7 @@
         <img src="https://wizzzy-mall.github.io/apps/img/back.png" alt="download" style="max-width:100%;" onclick="clickBtn()">
     </div>
 </body>
-<script>
-    function clickBtn() {
-
-        var u = navigator.userAgent;
-        var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //Android
-        var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //iOS    
-        if (isAndroid) {
-            window.location.href = 'https://play.google.com/store/apps/details?id=cn.figo.zhongpin';
-        }
-        if (isiOS) {
-            window.location.href = 'https://apps.apple.com/us/app/wizzzy-mall/id1509428390';
-        }
-    }
-</script>
-<!-- facebook SDK -->
- <script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId      : '{312156556817431}',
-      cookie     : true,
-      xfbml      : true,
-      version    : '{api-version}'
-    });
-      
-    FB.AppEvents.logPageView();   
-      
-  };
-
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "https://connect.facebook.net/en_US/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
-</script>   
-    <!-- facebook SDK -->
- <!-- Facebook Pixel Code -->
+<!-- Facebook Pixel Code -->
 <script>
   !function(f,b,e,v,n,t,s)
   {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -74,11 +37,11 @@
   t.src=v;s=b.getElementsByTagName(e)[0];
   s.parentNode.insertBefore(t,s)}(window, document,'script',
   'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '314303289695002');
+  fbq('init', '211583693497664');
   fbq('track', 'PageView');
 </script>
 <noscript><img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=314303289695002&ev=PageView&noscript=1"
+  src="https://www.facebook.com/tr?id=211583693497664&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Facebook Pixel Code -->
 </html>
