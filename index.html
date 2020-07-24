@@ -27,6 +27,20 @@
         <img src="https://wizzzy-mall.github.io/apps/img/back.png" alt="download" style="max-width:100%;" onclick="clickBtn()">
     </div>
 </body>
+<script>
+    function clickBtn() {
+
+        var u = navigator.userAgent;
+        var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //Android
+        var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //iOS    
+        if (isAndroid) {
+            window.location.href = 'https://play.google.com/store/apps/details?id=cn.figo.zhongpin';
+        }
+        if (isiOS) {
+            window.location.href = 'https://apps.apple.com/us/app/wizzzy-mall/id1509428390';
+        }
+    }
+</script>
 <!-- Facebook Pixel Code -->
 <script>
   !function(f,b,e,v,n,t,s)
